@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 5px;
+    /* align-content: center; */
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    /*--- to centre grid content ---*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ------ */
+    /* background-color: rgb(30 16 234 / 80%); */
+    /* border: 1px solid rgb(170 134 202 / 80%); */
+    padding: 10px;
+    font-size: 40px;
+    /* font-style: inherit; */
+    /* color: red; */
+    text-align: center; /*this will not work to centre text inside grid-item */
+  }
+
+  .hovered:hover{
+    background-color: yellow;
+  }
+
+  .game{
+    display: flex;
+    /* justify-content: center;  no need to align horizontally athat is along the main axis here*/
+    align-items: center;
+    flex-direction: column;
+    /* margin: 20px; */
+    /* background-color: beige; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* border-radius: 15px; */
+    /* align-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: center;
+    min-height: 400px;
+    height: 100%;
+    font-family: cursive;
+    border: 15px double #eab746;
+  }
+
+#p1{
+  background-color: rgb(110 236 78);
+
+  }
+
+  #p2{
+    background-color: blueviolet;
+  }
+.playerinfo{
+  text-align: center;
+  margin: 20px;
+}
+
+#turn{
+  background-color: yellow;
+}
+
+.grid-item.right{
+  /* border-bottom: 2px solid black; */
+  border-right: 2px solid black;
+}
+
+.grid-item.bottom{
+  border-bottom: 2px solid black;
+}
+
+.win{
+  background-color: rgb(122, 243, 243);
+}
